@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE-edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shopping Website</title>
+<!--stylesheet-->
+<link rel="stylesheet" type="text/css" href="css/style.css"/>
+<!--light-slider-css-->
+<link rel="stylesheet" type="text/css" href="css/lightslider.css"/>
+<!--jQuery-->
+<script src="js/jQuery.js"></script>
+<!--light-slider-js-->
+<script src="js/lightslider.js"></script>
+
+
+<!--fav-icon-->
+<link rel="shortcut icon" href="images/favicon.ico"/>
+<!--using-FontAwesome-For-Icons -->
+<script crossorigin="anonymous" src="https://kit.fontawesome.com/c8e4d183c2.js"></script>
+</head>
+<body>
+    <!--navigation-->
+    <nav>
+        <!--social-link-and-phone-number-->
+        <div class="social-call">
+            <!--social-link-->
+            <div class="social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div> 
+            <!--phone-number-->
+            <div class="phone">
+                <span>Call +1234567890</span>
+            </div>
+        </div>
+    
+        <!--menu-bar-->
+            <div class="navigation">
+                <!--logo-->
+                <a href="index.html" class="logo">
+                    <img src="images/logo.png"/>
+                </a>
+                <!--menu-icon-->
+                <div class="toggle"></div>
+                <!--menu-->
+                <ul class="menu">
+                    <li><a href="index.html"><b>Home</b></a></li>
+                    <li><a href="men.html">Men</a>
+                    <!--sale-label-->
+                        <span class="sale-label">Sale</span>
+                    </li>
+                    
+                    <li><a href="women.html">Women</a></li>
+                    <li><a href="kids.html">Kids</a></li>
+                    <li><a href="#">Shop</a></li>
+                </ul>
+                <!--right-menu-->
+                <div class="right-menu">
+                    <!--search-->
+                    <a href="javascript:void(0);" class="search">
+                        <i class="fas fa-search"></i>
+                    </a>
+                    <!--user-->
+                    <a href="javascript:void(0);" class="user">
+                        <i class="far fa-user"></i>
+                    </a>
+                    <!--cart-icon-->
+                    <a href="#">
+                        <i class="fas fa-shopping-cart">
+                        <!--humber-of-products-in-cart-->
+                        <span class="num-cart-product">0</span>
+                    </i>
+                    </a>
+                </div>
+
+            </div>
+    </nav>
+    <!--search-bar-->
+    <div class="search-bar">
+        <!--search-input-->
+        <div class="search-input">
+            <!--input-->
+            <input type="text" placeholder="Search for Product"/>
+            <!--cancel-btn-->
+            <a href="javascript:void(0);" class="search-cancel">
+                <i class="fas fa-times"></i>
+            </a>
+        </div>
+    </div>
+    
+    <!--login-and-sign-up-form-->
+    <div class="form">
+        <!--login-->
+        <div class="login-form">
+            <!--cancel-btn-->
+            <a href="javascript:void(0);" class="form-cancel">
+                <i class="fas fa-times"></i>
+            </a>
+            <!--heading-->
+            <strong>Log In</strong>
+            <!--inputs-->
+            <form action="/dosignin" method="post">
+                <input type="text" placeholder="Username" name="username" required>
+                <input type="password" placeholder="Password" name="password" required>
+                <!--submit-btn-->
+                <input type="submit" value="Log In">
+            </form>
+            <!--forget-and-sign-up-btn-->
+            <div class="form-btns">
+                <a href="#" class="forget">Forgot Your Password?</a>
+                <a href="javascript:void(0);" class="sign-up-btn">Create Account</a>
+            </div>
+        </div>
+
+        <!--Sign-up-->
+        <div class="sign-up-form">
+            <!--cancel-btn-->
+            <a href="javascript:void(0);" class="form-cancel">
+                <i class="fas fa-times"></i>
+            </a>
+            <!--headin-->
+            <strong>Sign Up</strong> 
+            <!--inputs-->
+            <form action="/dosignup" method="post">
+                <input type="text" placeholder="Full Name" name="username" required>
+                <input type="email" placeholder="example@gmail.com" name="email" required>
+                <input type="password" placeholder="Password" name="password" required>
+                <input type="password" placeholder="Confirm Password" name="cnfrmpass" required>
+                <!--submit-btn-->
+                <input type="submit" value="Sign Up">
+            </form>
+            <!--forget-and-sign-up-btn-->
+            <div class="form-btns">
+                <a href="javascript:void(0);" class="already-account">Already Have An Account?</a>
+            </div>
+        </div>
+    </div>
+    
+<!--Full-Slider-->
+
+<ul id="adaptive" class="cs-hidden">
+    <!--box-1-->
+    <li class="item-a">
+        <!--box-->
+        <div class="full-slider-box f-slide-1">
+            <!--slider-text-container-->
+            <div class="slider-text-container">
+
+            <div class="f-slider-text">
+                <span>Limited Offer</span>
+                <strong>30% OFF<br/> with <font>Promo Code</font></strong>
+                <a href="#" class="f-slider-btn">Shop Now</a>
+            </div>
+            </div>
+        </div>
+    </li>
+
+    <!--box-2-->
+    <li class="item-a">
+        <!--box-->
+        <div class="full-slider-box f-slide-2">
+            <!--slider-text-container-->
+            <div class="slider-text-container">
+
+            <div class="f-slider-text">
+                <span>Limited Offer</span>
+                <strong>30% OFF<br/> with <font>Promo Code</font></strong>
+                <a href="#" class="f-slider-btn">Shop Now</a>
+            </div>
+            </div>
+    
+        </div>
+    </li>
+
+    <!--box-3-->
+    <li class="item-a">
+        <!--box-->
+        <div class="full-slider-box f-slide-3">
+            <!--slider-text-container-->
+            <div class="slider-text-container">
+
+            <div class="f-slider-text">
+                <span>Limited Offer</span>
+                <strong>30% OFF<br/> with <font>Promo Code</font></strong>
+                <a href="#" class="f-slider-btn">Shop Now</a>
+            </div>
+            </div>
+    
+        </div>
+    </li>
+
+  </ul>
+  <!--Featured-Categories-->
+  <div class="feature-heading">
+      <h2>Featured Categories</h2>
+  </div>
+  
+  <ul id="autoWidth" class="cs-hidden">
+      <!--1-->
+        <li class="item">
+            <!--feature-box-->
+            <div class="feature-box">
+                <a href="#">
+                <img src="images/feature_1.png" />
+                </a>
+            </div>
+            <!--text-->
+            <span>Nike Blue Shoes</span>
+        </li>
+
+        <!--2-->
+        <li class="item">
+            <!--feature-box-->
+            <div class="feature-box">
+                <a href="#">
+                <img src="images/feature_2.png" />
+                </a>
+            </div>
+            <!--text-->
+            <span>Nike Blue Shoes</span>
+        </li>
+    
+        <!--3-->
+        <li class="item">
+            <!--feature-box-->
+            <div class="feature-box">
+                <a href="#">
+                <img src="images/feature_3.png" />
+                </a>
+            </div>
+            <!--text-->
+            <span>Nike Blue Shoes</span>
+        </li>
+        
+        <!--4-->
+        <li class="item">
+            <!--feature-box-->
+            <div class="feature-box">
+                <a href="#">
+                <img src="images/feature_4.png" />
+                </a>
+            </div>
+            <!--text-->
+            <span>Nike Blue Shoes</span>
+        </li>
+
+        <!--5-->
+        <li class="item">
+            <!--feature-box-->
+            <div class="feature-box">
+                <a href="#">
+                <img src="images/feature_5.png" />
+                </a>
+            </div>
+            <!--text-->
+            <span>Nike Blue Shoes</span>
+        </li>
+
+        <!--6-->
+        <li class="item">
+            <!--feature-box-->
+            <div class="feature-box">
+                <a href="#">
+                <img src="images/feature_6.png" />
+                </a>
+            </div>
+            <!--text-->
+            <span>Nike Blue Shoes</span>
+        </li>
+  </ul>
+
+<!--new-arrival-->
+<section class="new-arrival">
+    <!--heading-->
+    <div class="arrival-heading">
+        <strong>New Arrival</strong>
+        <p>We Provide You New Design Fashion Clothes</p>
+    </div>
+    <!--product-container-->
+    <div class="product-container">
+        <!--product-box-1-->
+        <div class="product-box">
+
+            <!--img-->
+            <div class="product-img">
+                <!--add-cart-->
+                <a href="#" class="add-cart">
+                    <i class="fas fa-shopping-cart"></i>
+                </a>
+                <img src="images/p-1.png" />
+            </div>
+              
+            <!--details-->
+            <div class="product-details">
+                <a href="#" class="p-name">Black Jacket with Fur Cap</a>
+                <span class="p-price">Rs. 5999</span>
+            </div>
+        </div>
+        <!--product-box-2-->
+        <div class="product-box">
+
+            <!--img-->
+            <div class="product-img">
+                <!--add-cart-->
+                <a href="#" class="add-cart">
+                    <i class="fas fa-shopping-cart"></i>
+                </a>
+                <img src="images/p-2.png" />
+            </div>
+              
+            <!--details-->
+            <div class="product-details">
+                <a href="#" class="p-name">Checked Full Sleeves Shirt</a>
+                <span class="p-price">Rs. 899</span>
+            </div>
+        </div>
+        <!--product-box-3-->
+        <div class="product-box">
+
+            <!--img-->
+            <div class="product-img">
+                <!--add-cart-->
+                <a href="#" class="add-cart">
+                    <i class="fas fa-shopping-cart"></i>
+                </a>
+                <img src="images/p-3.png" />
+            </div>
+              
+            <!--details-->
+            <div class="product-details">
+                <a href="#" class="p-name">White Goggles</a>
+                <span class="p-price">Rs. 1999</span>
+            </div>
+        </div>
+        <!--product-box-4-->
+        <div class="product-box">
+
+            <!--img-->
+            <div class="product-img">
+                <!--add-cart-->
+                <a href="#" class="add-cart">
+                    <i class="fas fa-shopping-cart"></i>
+                </a>
+                <img src="images/p-4.png" />
+            </div>
+              
+            <!--details-->
+            <div class="product-details">
+                <a href="#" class="p-name">Brown Leather Handbag</a>
+                <span class="p-price">Rs. 2999</span>
+            </div>
+        </div>
+        <!--product-box-5-->
+        <div class="product-box">
+
+            <!--img-->
+            <div class="product-img">
+                <!--add-cart-->
+                <a href="#" class="add-cart">
+                    <i class="fas fa-shopping-cart"></i>
+                </a>
+                <img src="images/p-5.png" />
+            </div>
+              
+            <!--details-->
+            <div class="product-details">
+                <a href="#" class="p-name">Denim Blue Loafers</a>
+                <span class="p-price">Rs. 999</span>
+            </div>
+        </div>
+        <!--product-box-6-->
+        <div class="product-box">
+
+            <!--img-->
+            <div class="product-img">
+                <!--add-cart-->
+                <a href="#" class="add-cart">
+                    <i class="fas fa-shopping-cart"></i>
+                </a>
+                <img src="images/p-6.png" />
+            </div>
+              
+            <!--details-->
+            <div class="product-details">
+                <a href="#" class="p-name">Pink Heels Shoes</a>
+                <span class="p-price">Rs. 1599</span>
+            </div>
+        </div>
+        <!--product-box-7-->
+        <div class="product-box">
+
+            <!--img-->
+            <div class="product-img">
+                <!--add-cart-->
+                <a href="#" class="add-cart">
+                    <i class="fas fa-shopping-cart"></i>
+                </a>
+                <img src="images/p-7.png" />
+            </div>
+              
+            <!--details-->
+            <div class="product-details">
+                <a href="#" class="p-name">Yellow Backpack</a>
+                <span class="p-price">Rs. 1999</span>
+            </div>
+        </div>
+        <!--product-box-8-->
+        <div class="product-box">
+
+            <!--img-->
+            <div class="product-img">
+                <!--add-cart-->
+                <a href="#" class="add-cart">
+                    <i class="fas fa-shopping-cart"></i>
+                </a>
+                <img src="images/p-8.png" />
+            </div>
+              
+            <!--details-->
+            <div class="product-details">
+                <a href="#" class="p-name">Solid Black Men's Shirt</a>
+                <span class="p-price">Rs. 899</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--sale-->
+<section class="sale">
+    <!--sale-box-1-->
+    <div class="sale-box">
+        <!--img-->
+        <img src="images/sale-1.jpg" />
+        <!--text-->
+        <a href="#">
+            <div class="sale-text">
+                <strong>Luggage Trolley Bag</strong>
+                <span>Sale off 25%</span>
+            </div>
+        </a>
+    </div>
+    <!--sale-box-2-->
+    <div class="sale-box">
+        <!--img-->
+        <img src="images/sale-2.jpg" />
+        <!--text-->
+        <a href="#">
+            <div class="sale-text">
+                <strong>Women's Dress</strong>
+                <span>Sale off 25%</span>
+            </div>
+        </a>
+    </div>
+    <!--sale-box-3-->
+    <div class="sale-box">
+        <!--img-->
+        <img src="images/sale-3.jpg" />
+        <!--text-->
+        <a href="#">
+            <div class="sale-text">
+                <strong>Men's Formal Black Shoes</strong>
+                <span>Sale off 25%</span>
+            </div>
+        </a>
+    </div>
+</section>
+
+<!--new-arrival-->
+<section class="new-arrival">
+    <!--heading-->
+    <div class="arrival-heading">
+        <strong>Feature Items</strong>
+        <p>We Provide You New Design Fashion Clothes</p>
+    </div>
+    <!--product-container-->
+    <div class="product-container">
+        <!--product-box-1-->
+        <div class="product-box">
+
+            <!--img-->
+            <div class="product-img">
+                <!--add-cart-->
+                <a href="#" class="add-cart">
+                    <i class="fas fa-shopping-cart"></i>
+                </a>
+                <img src="images/p-1.png" />
+            </div>
+              
+            <!--details-->
+            <div class="product-details">
+                <a href="#" class="p-name">Black Jacket with Fur Cap</a>
+                <span class="p-price">Rs. 5999</span>
+            </div>
+        </div>
+        <!--product-box-2-->
+        <div class="product-box">
+
+            <!--img-->
+            <div class="product-img">
+                <!--add-cart-->
+                <a href="#" class="add-cart">
+                    <i class="fas fa-shopping-cart"></i>
+                </a>
+                <img src="images/p-2.png" />
+            </div>
+              
+            <!--details-->
+            <div class="product-details">
+                <a href="#" class="p-name">Checked Full Sleeves Shirt</a>
+                <span class="p-price">Rs. 899</span>
+            </div>
+        </div>
+        <!--product-box-3-->
+        <div class="product-box">
+
+            <!--img-->
+            <div class="product-img">
+                <!--add-cart-->
+                <a href="#" class="add-cart">
+                    <i class="fas fa-shopping-cart"></i>
+                </a>
+                <img src="images/p-3.png" />
+            </div>
+              
+            <!--details-->
+            <div class="product-details">
+                <a href="#" class="p-name">White Goggles</a>
+                <span class="p-price">Rs. 1999</span>
+            </div>
+        </div>
+        <!--product-box-4-->
+        <div class="product-box">
+
+            <!--img-->
+            <div class="product-img">
+                <!--add-cart-->
+                <a href="#" class="add-cart">
+                    <i class="fas fa-shopping-cart"></i>
+                </a>
+                <img src="images/p-4.png" />
+            </div>
+              
+            <!--details-->
+            <div class="product-details">
+                <a href="#" class="p-name">Brown Leather Handbag</a>
+                <span class="p-price">Rs. 2999</span>
+            </div>
+        </div>
+    </div>
+</section>
+  
+<!--banner-->
+<!--box-->
+<div class="banner-box f-slide-3">
+    <!--banner-container-->
+    <div class="banner-text-container">
+
+    <div class="banner-text">
+        <span>Limited Offer</span>
+        <strong>30% OFF<br/> with <font>Promo Code</font></strong>
+        <a href="#" class="banner-btn">Shop Now</a>
+    </div>
+    </div>
+</div>
+
+<!--services-->
+<section class="services">
+    <!--services-box-1-->
+    <div class="services-box">
+        <i class="fas fa-shipping-fast"></i>
+        <span>Free Shipping</span>
+        <p>Free Shipping For All India Orders</p>
+    </div>
+    <!--services-box-2-->
+    <div class="services-box">
+        <i class="fas fa-headphones-alt"></i>
+        <span>Support</span>
+        <p>We support 24*7</p>
+    </div>
+    <!--services-box-3-->
+    <div class="services-box">
+        <i class="fas fa-sync"></i>
+        <span>100% Money Back</span>
+        <p>You have 30 days to Return</p>
+    </div>
+</section>
+
+<!--footer-->
+<footer>
+    <!--copyright-->
+    <span class="copyright">
+        Copyright 2021- GoingToInternet
+    </span>
+    <!--Subscribe-->
+    <div class="subscribe">
+        <form>
+            <input type="email" placeholder="example@gmail.com" required />
+            <input type="submit" value="Subscribe" />
+        </form>
+    </div>
+</footer>
+
+    <!--script-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/query.js"></script>
+    <script src="js/jQuery.js"></script>
+    <script src="js/lightslider.js"></script>
+</body>
+</html>

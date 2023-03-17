@@ -1,0 +1,40 @@
+.men-section,
+.women-section,
+.kids-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.men-heading strong,
+.women-section strong,
+.kids-section strong{
+    font-size: 1.5rem;
+    color: #ffffff;
+    background-color: #202020;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-top: 40px;
+    padding: 5px 30px;
+    border: 1px solid #e0e0e0;
+
+}
+.men-heading,
+.women-heading,
+.kids-heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+@media(max-width: 600px)
+{
+    .men-section strong,
+    .women-section strong,
+    .kids-section strong
+    {
+        font-size: 1.2rem;
+    }
+}
